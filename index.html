@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+  </head>
+  <body>
+    <h1 class="title">Mordovin Vitaliy CV</h1>
+
+    <section class="contacts">
+      <h2 class="contacts__title subtitle">Contacts</h2>
+      <ul class="contacts__list list">
+        <li class="contacts__item">Address: Ryazan, Russia</li>
+        <li class="contacts__item">
+          Email: <a href="mailto:vitmord@gmail.com">vitmord@gmail.com</a>
+        </li>
+        <li class="contacts__item">
+          Github:
+          <a href="https://github.com/vitmord" target="_blank">vitmord</a>
+        </li>
+        <li class="contacts__item">Discord chat: VM (@vitmord)</li>
+      </ul>
+    </section>
+
+    <section class="summary">
+      <h2 class="summary__title subtitle">Summary</h2>
+      <p class="summary__text text">
+        I'm currently working as frontend engineer at «Magnito-Kontakt» Ltd
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2 class="skills__title subtitle">Skills</h2>
+      <ul class="skills__list list">
+        <li class="skills__item">HTML (BEM)</li>
+        <li class="skills__item">CSS (SCSS)</li>
+        <li class="skills__item">Bootstrap</li>
+        <li class="skills__item">JS (Vanilla)</li>
+        <li class="skills__item">Gulp</li>
+        <li class="skills__item">Git</li>
+        <li class="skills__item">Figma</li>
+        <li class="skills__item">VS Code</li>
+      </ul>
+    </section>
+
+    <section class="code">
+      <h2 class="code__title subtitle">Code examples</h2>
+
+      <code>
+        <pre>
+            const express = require('express')
+            const app = express()
+            const port = 3000
+            const fs = require('fs')
+
+            app.post('/users', function (req, res) {
+              const user = req.body
+              fs.appendToFile(
+                'users.txt',
+                JSON.stringify({
+                  name: user.name,
+                  age: user.age
+                }),
+                (err) => {
+                  res.send('successfully registered')
+                }
+              )
+            })
+
+            app.listen(port, (err) => {
+              if (err) {
+                return console.log('something bad happened', err)
+              }
+
+              console.log(`server is listening on ${port}`)
+            })
+          </pre
+        >
+      </code>
+    </section>
+  </body>
+</html>
