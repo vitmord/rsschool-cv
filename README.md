@@ -1,1 +1,1 @@
-[vitmord CV](https://vitmord.github.io/rsschool-cv/cv)
+[vitmord CV](https://vitmord.github.io/rsschool-cv/)
