@@ -10,3 +10,14 @@
 ## Summary
 
 I'm currently working as frontend engineer at «Magnito-Kontakt» Ltd
+
+## Skills
+
+- HTML (BEM)
+- CSS (SCSS)
+- Bootstrap
+- JS (Vanilla)
+- Gulp
+- Git
+- Figma
+- VS Code
