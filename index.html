@@ -56,35 +56,13 @@
       <h2 class="code__title subtitle">Code examples</h2>
 
       <code>
-        <pre>
-            const express = require('express')
-            const app = express()
-            const port = 3000
-            const fs = require('fs')
-
-            app.post('/users', function (req, res) {
-              const user = req.body
-              fs.appendToFile(
-                'users.txt',
-                JSON.stringify({
-                  name: user.name,
-                  age: user.age
-                }),
-                (err) => {
-                  res.send('successfully registered')
-                }
-              )
-            })
-
-            app.listen(port, (err) => {
-              if (err) {
-                return console.log('something bad happened', err)
-              }
-
-              console.log(`server is listening on ${port}`)
-            })
-          </pre
-        >
+        const express = require('express') const app = express() const port =
+        3000 const fs = require('fs') app.post('/users', function (req, res) {
+        const user = req.body fs.appendToFile( 'users.txt', JSON.stringify({
+        name: user.name, age: user.age }), (err) => { res.send('successfully
+        registered') } ) }) app.listen(port, (err) => { if (err) { return
+        console.log('something bad happened', err) } console.log(`server is
+        listening on ${port}`) })
       </code>
     </section>
   </body>
