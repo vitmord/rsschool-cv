@@ -1,0 +1,2 @@
+- (Markdown CV)[https://vitmord.github.io/rsschool-cv/cv]
+- (HTML CV)[https://vitmord.github.io/rsschool-cv/]
